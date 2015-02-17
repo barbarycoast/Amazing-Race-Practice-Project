@@ -1,0 +1,233 @@
+
+/*///////////////////
+GENERAL STYLES & FORMATTING
+///////////////////*/
+h1 {
+	font-size: 60px;
+	margin: 20px auto;
+}
+
+h2 {
+	font-size: 40px;
+}
+
+h3 {
+	font-size: 25px;
+}
+
+body {
+	background: black;
+	color: yellow;
+	width: 90%;
+	height: 700px;
+	margin: 20px auto;
+	font-family: 'Share Tech Mono';
+	text-align: center;
+}
+
+p {
+	font-size: 22px;
+}
+
+
+/*///////////////////
+CHOOSE PLAYER SCREEN STYLES
+///////////////////*/
+
+.choose-players {
+	margin: 100px auto;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  display: inline-block;
+  font-size: 20px;
+  padding:10px 16px;
+  margin: 0px 15px;
+  border-radius: 30px;
+  border: 3px solid yellow;
+}
+
+.choose-players li:hover{
+	background-color: white;
+	color: black;
+}
+
+/*///////////////////
+PLAYER DETAILS SCREEN STYLES
+///////////////////*/
+
+.player-details-box {
+	display: block;
+}
+
+.player-details {
+	display: inline-block;
+	padding: 15px;
+	border: 1px solid yellow;
+	margin: 10px;
+}
+
+.player-details-box button {
+	padding: 5px;
+	margin: 30px 5px;
+	width: 150px;
+}
+
+input.name{
+	width: 200px;
+	height: 40px;
+	background-color: black;
+	border: 3px solid yellow;
+	border-radius: 3px;
+	color: white;
+	font-size: 20px;
+	font-family: 'Share Tech Mono';
+	text-transform: uppercase;
+	text-align: center;
+}
+
+
+	/*
+.red {
+	background-color: red;
+	border-color: red;
+	color: red;
+}
+
+.yellow {
+	background-color: yellow;
+	border-color: yellow;
+	color: yellow;
+}
+
+.green {
+	background-color: green;
+	border-color: green;
+	color: green;
+}
+
+.blue {
+	background-color: blue;
+	border-color: blue;
+	color: blue;
+}
+
+.gray {
+	background-color: gray;
+	border-color: gray;
+	color: gray;
+}
+
+.selected {
+	border-color: white;
+}
+
+.colors {
+	margin-bottom: 15px;
+}
+
+.colors li:hover {
+	border-color: white;
+	}*/
+
+/*///////////////////
+RACE SCREEN STYLES
+///////////////////*/
+
+.racetrack-container {
+	margin: auto;
+	width: 1000px;
+}
+
+.instructions .players {
+	text-transform: uppercase;
+}
+
+.racetrack {
+	text-align: left;
+	float: left;
+}
+
+.racetrack li {
+	display: block;
+	border: none;
+	margin: 0;
+}
+
+.names li {
+	padding: 15px 0px;  
+	font-size: 24px;
+	text-align: right;
+	text-transform: uppercase;
+}
+
+.names li.hidden {
+	display: none;
+}
+
+.lane li {
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 20px;
+	padding: 10px;
+	margin: 5px 0px;
+  border-radius: 30px;
+  border: 3px solid gray;
+}
+
+.player-1 .active {
+	background: red;
+}
+
+.player-2 .active {
+	background: yellow;
+}
+
+.player-3 .active {
+	background: green;
+}
+
+.player-4 .active {
+	background: blue;
+}
+
+.winner-message {
+	margin: auto;
+	padding: 50px;
+}
+
+button {
+	clear: all;
+	width: 200px;
+	height: 40px;
+	background-color: black;
+	border: 3px solid yellow;
+	border-radius: 3px;
+	color: white;
+	font-size: 20px;
+	font-family: 'Share Tech Mono';
+	text-transform: uppercase;
+	text-align: center;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+/*catch-all class*/
+.hidden {
+	display: none;
+}

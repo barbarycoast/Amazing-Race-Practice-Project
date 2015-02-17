@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="description" content="Your description goes here">
+    	<meta name="keywords" content="one, two, three">
+	
+		<title>Racer</title>
+		
+		<!-- external CSS link -->
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/styles.css">
+        <link href='http://fonts.googleapis.com/css?family=Share+Tech+Mono' rel='stylesheet' type='text/css'>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script src="amazing_race.js"></script>
+
+	</head>
+	<body>
+        <div class='welcome'>
+            <h2>Welcome to</h2>
+            <h1>the Amazing Race!</h1>
+            <div class='welcome-car'>
+                <img src='car.png'>
+            </div>
+        </div>
+
+        <div class='choose-players'>
+            <h2>How many racers?</h2>
+            <ul class='number-players'>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+            </ul>
+        </div>
+
+        <div class='player-details-box hidden'>
+
+            <div class='player-details first-player'>
+                <h2>Player 1</h1>
+                <h3>Name:</h3>
+                <input type='text' class='name' maxlength='10'></input>
+<!--                 <h3>Color:</h3>
+                <ul class="colors">
+                    <li class="red">R</li>
+                    <li class="yellow">Y</li>
+                    <li class="green">G</li>
+                    <li class="blue">B</li>
+                </ul> -->
+            </div>
+
+            <div class='player-details second-player hidden'>
+                <h2>Player 2</h1>
+                <h3>Name:</h3>
+                <input type='text' class='name' maxlength='10'></input>
+<!--                 <h3>Color:</h3>
+                <ul class="colors">
+                    <li class="red">R</li>
+                    <li class="yellow">Y</li>
+                    <li class="green">G</li>
+                    <li class="blue">B</li>
+                </ul> -->
+            </div>
+            <div class='player-details third-player hidden'>
+                <h2>Player 3</h1>
+                <h3>Name:</h3>
+                <input type='text' class='name' maxlength='10'></input>
+<!--                 <h3>Color:</h3>
+                <ul class="colors">
+                    <li class="red">R</li>
+                    <li class="yellow">Y</li>
+                    <li class="green">G</li>
+                    <li class="blue">B</li>
+                </ul> -->
+            </div>
+
+            <div class='player-details fourth-player hidden'>
+                <h2>Player 4</h1>
+                <h3>Name:</h3>
+                <input type='text' class='name' maxlength='10'></input>
+<!--                 <h3>Color:</h3>
+                <ul class="colors">
+                    <li class="red">R</li>
+                    <li class="yellow">Y</li>
+                    <li class="green">G</li>
+                    <li class="blue">B</li>
+                </ul> -->
+            </div>
+            <div class="nav-buttons">
+                <button class="back">Back</button>
+                <button class="lets-race">Let's Race</button>
+            </div>
+        </div> <!--end player-details-box--> 
+
+        <div class='race-screen hidden'>
+            <div class="instructions">
+                <h1>Let the race begin!</h1>
+                <div>
+                    <p>Press the key as fast as you can to move your car across the screen.</p>
+                    <p class="players">Player 1 - press Q</p>    
+                    <p class="players hidden">Player 2 - press P</p>    
+                    <p class="players hidden">Player 3 - press Z</p>    
+                    <p class="players hidden">Player 4 - press /</p>    
+                </div>
+            </div>
+
+         <!--    <h2>Start your engines...</h2>
+            <h3 class='countdown'>3...</h3>
+            <h3 class='countdown'>2...</h3>
+            <h3 class='countdown'>1...</h3>
+            <h3 class='countdown'>Go!</h3> -->
+            <div class='winner-message hidden'>
+                <h1 class= 'winner-message'></h1>
+                <button class= 'play-again'>Play Again</button>
+            </div> 
+
+            <div class='racetrack-container clearfix'>
+
+                <ul class='racetrack names'>
+                    <li class="hidden"></li>
+                    <li class="hidden"></li>
+                    <li class="hidden"></li>
+                    <li class="hidden"></li>
+                </ul>
+
+                <ul class='racetrack'>
+
+                    <li>
+                        <ul class='lane player-1 hidden'>
+                            <li class="active"></li>  <li></li>  <li></li>  <li></li>  <li></li>  <li></li>  <li></li>  <li></li>  <li></li>  <li></li>  <li></li>  <li></li>  <li></li>  <li></li>  <li></li>  <li></li>  <li></li>  <li></li>  <li></li>  <li></li>  <li></li>  <li></li>  <li></li> 
+                        </ul>
+                    </li>
+
+                    <li>
+                        <ul class='lane player-2 hidden'>
+                            <li class="active"></li>  <li></li>  <li></li>  <li></li>  <li></li>  <li></li>  <li></li>  <li></li>  <li></li>  <li></li>  <li></li>  <li></li>  <li></li>  <li></li>  <li></li>  <li></li>  <li></li>  <li></li>  <li></li>  <li></li>  <li></li>  <li></li>  <li></li>   
+                        </ul>
+                     </li>  
+
+                     <li>
+                        <ul class='lane player-3 hidden'>
+                            <li class="active"></li>  <li></li>  <li></li>  <li></li>  <li></li>  <li></li>  <li></li>  <li></li>  <li></li>  <li></li>  <li></li>  <li></li>  <li></li>  <li></li>  <li></li>  <li></li>  <li></li>  <li></li>  <li></li>  <li></li>  <li></li>  <li></li>  <li></li> 
+                        </ul>
+                    </li> 
+
+                    <li>
+                        <ul class='lane player-4 hidden'>
+                            <li class="active"></li>  <li></li>  <li></li>  <li></li>  <li></li>  <li></li>  <li></li>  <li></li>  <li></li>  <li></li>  <li></li>  <li></li>  <li></li>  <li></li>  <li></li>  <li></li>  <li></li>  <li></li>  <li></li>  <li></li>  <li></li>  <li></li>  <li></li>            
+                        </ul>
+                    </li>
+                </ul>
+
+<!--                 <button class="clearfix">Play Again</button>
+ -->            </div>
+        </div>
+	</body>
+</html>
